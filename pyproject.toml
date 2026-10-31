@@ -1,0 +1,19 @@
+[project]
+name = "alertgate"
+version = "0.1"
+requires-python = ">=3.12"
+dependencies = [
+    "pytest",
+    "fastapi",
+    "uvicorn",
+    "httpx",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+
+[tool.setuptools]
+packages = ["alertgate"]
